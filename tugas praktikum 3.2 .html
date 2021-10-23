@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <title>form pemesanan barang</title>
+</head>
+<body>
+    <form>
+        <nav style="background-color: #c9c9c9; height: 50px; display: grid;">
+         <font style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+            <ul style="display: flex; list-style-type:none ;">
+                <li style="margin-right: 150px;">
+                  <a href="#" style="color: #212121; text-decoration: none;"><b>Home</b></a> |
+                </li>
+
+                <li style="margin-right: 170px;"> 
+                     <a href="#" style="color: #212121; text-decoration: none;"><b>Generate Link</b></a> |
+                </li>
+
+                <li style="margin-right: 190px;">
+                    <a href="#" style="color: #212121; text-decoration: none;"><b>Transaction History</b> </a> |
+                </li>
+
+                <li style="margin-right: 300px;">
+                    <a href="#" style="color: #212121; text-decoration: none;"><b>Policy</b> </a> |
+                </li>
+
+                <li style="margin-right: 100px;">
+                    <a href="#" style="color: #212121; text-decoration: none;"><b>Logout</b> </a> |
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <div style="width:100%; overflow:hidden;">
+            <div style="width: 500px; float: left;">
+                <img src="laptop.jpg" style="width: 500px; padding: 10px;"><br>
+                <input type="file" name="upload" style="padding: 10px;" value="upload picture">
+            </div>
+            <div style="width: 600px; float: right; padding: 10px; margin-right: 160px;">
+                <div>
+                    <label>Title here : <input type="text" name="" size="42"></label>
+                </div>
+                <br>
+               <div>
+                    <label>Description : </label>
+                    <textarea name="instructions" rows="7" cols="40" maxlength="400">
+                    </textarea>
+                </div>
+                <br>
+                <div>
+                    <label>Account number : <input type="text" name="" size="36"></label>
+                </div>
+                <br>
+                <div>
+                    <label>Bank : </label>
+                        <select name="bank" size="1" style="width: 200px;">
+                        <option>HSBC</option>
+                        <option>Paypal</option>
+                        <option>Visa</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Account holder : <input type="text" name="" size="37"></label>
+                </div>
+                <br>
+                <div>
+                    <label>Transaction : <input type="number" min="1" max="10"></label>
+                </div>
+                <div style="margin-left: 80px;">
+                    <p style="font-size: 12px;">*if the transaction is for 3 person, choose 3 from the drop-down list</p>
+                    <input id="mblphn" type="checkbox" name="phone" value="Send to mobile phone" checked="on">
+                    <label for="mblphn">Send to mobile phone</label>
+                    <br>
+                    <input id="email" type="checkbox" name="mail" value="Send to email" checked="on">
+                    <label for="email">Send to email</label>
+                </div>
+                <br>
+                <div>
+                    <label>Send to mobile phone : <input type="text" name="" size="32"></label>
+                </div>
+                <br>
+                <div>
+                    <label>Send to email : <input type="email" name="" size="30"></label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Generate Nabr Link">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
